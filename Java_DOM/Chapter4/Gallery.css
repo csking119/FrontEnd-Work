@@ -1,0 +1,22 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+h1 {
+	text-align: center;
+}
+ul {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+li {
+	display: inline;
+	margin-right: 100px;
+}
+img {
+	max-width: 100%;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
