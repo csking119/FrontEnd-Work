@@ -8,10 +8,19 @@ ul {
 	width: 800px;
 	margin-right: auto;
 	margin-left: auto;
+	display: block;
 }
 li {
 	display: inline;
-	margin-right: 100px;
+	margin-left: 120px;
+}
+a{
+	text-decoration: none;
+	font-size: 1.2em;
+	color: green;
+}
+a:hover {
+	background-color: grey;
 }
 img {
 	max-width: 100%;
@@ -19,4 +28,9 @@ img {
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
+}
+p{
+	text-align: center;
+	font-weight: bold;
+	color: red;
 }
