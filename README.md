@@ -1,7 +1,7 @@
 # FrontEnd-Work
 ##A place where I perform the web experiments
 
-[Main exercise]
+[Book1](https://book.douban.com/subject/6038371/)
 >![](https://img3.doubanio.com/mpic/s4677623.jpg)
 
 1.从第一至第三章，学习了JavaScript的基本语法，变量、函数、对象等
