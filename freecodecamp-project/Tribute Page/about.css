@@ -1,0 +1,41 @@
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	background-color: #eee;
+}
+
+header {
+	text-align: center;
+}
+header h1{
+	color: #808080;
+}
+header h2{
+	color: #808080;
+	font-style: italic;
+}
+figure {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: #fff;
+	width: 50%;
+}
+figure img{
+	width: 100%;
+}
+figure figcaption {
+	padding: 9px;
+}
+article h3 {
+	margin-left: 25%;
+}
+article ul {
+	width: 400px;
+	margin: 0 auto;
+}
+article blockquote {
+	text-align: center;
+}
+article p {
+	text-align: center;
+}
