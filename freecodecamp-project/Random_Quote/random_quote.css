@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	background-color: rgb(231, 76, 60);
+}
+.quote_wrapper {
+	width: 500px;
+	margin: 200px auto 10px auto;
+	padding: 55px 40px 65px 40px;
+	background:#fff;
+	border-radius: 4px;
+}
+.quote_wrapper .quote_content {
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	color: rgb(231, 76, 60);
+}
+.quote_wrapper .quote_content .semi:before{
+	width: 20px;
+	float: left;	
+	content: '\201c';
+}
+.quote_wrapper .quote_content p {
+	width: 480px;
+	float: left;
+}
+.quote_wrapper .quote_author {
+	margin-top: 20px;
+	padding: 10px 0px 20px 0px;
+	float: right;
+	color: rgb(231, 76, 60);
+	
+}
+.quote_wrapper .buttons {
+	clear: right;
+	margin-top: 50px;
+	width: 500px;
+}
+.buttons a{
+	width: 40px;
+	height: 30px;
+	padding-top: 7px;	
+	float: left;
+	background-color: rgb(231, 76, 60);
+	font-size: 1.2em;
+	color: #fff;
+	border-radius: 4px;
+	text-align: center; 
+
+}
+
+.buttons .fa-twitter:before {
+	content: "\f099";
+	
+}
+
+.quote_wrapper .quote_button .q_button{
+	float: right;
+	background-color: rgb(231, 76, 60);
+	font-size: 1.1em;
+	padding: 8px 10px;
+	border:none;
+	border-radius: 4px;
+	color: #fff;
+}
+footer {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+footer a{
+	text-decoration: none;
+	color: #fff;
+}
