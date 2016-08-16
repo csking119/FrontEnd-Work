@@ -1,0 +1,71 @@
+javaScript高级程序设计对象创建的难处理解
+
+javaScript创建对象有好几总模式：工厂模式、构造函数模式、原型模式；其作用都是为了创建对象时，针对特定接口来封装，从而创建定制的对象。这几个模式，各有优缺点：工厂模式创造的对象，其类型还是Object；构造函数模式中的方法会在每个实例上重新创建一次，浪费资源；而原型模式，如果含有引用类型属性（如数组），则会导致，一个实例如果改变了原型对象中的属性，其他实例的这个属性也会动态被改变。比如下面这中情况：
+
+	function Person() {
+
+}
+
+Person.prototype={
+
+name:"zhang",				
+
+age:29,
+
+job:"Front-end Engineer",
+
+friends:["xu","li"]		
+
+};
+
+var person1=new Person();
+
+var person2=new Person();
+
+person1.fridens.push("jiao");
+
+alert(person1.friends);//"xu,li,jiao"
+
+alert(person2.friends);//"xu,li,jiao"
+
+从上面的例子看到，当person1覆盖原型对象中的属性时，由于原型对象的动态性，person2里面的friends属性也被改变了，显然这是不合理的。
+
+下面重点讲一下原型模式的一些难理解的地方。首先，原型模式最常见的语法是：
+
+function Person() {
+
+}
+
+Person.prototype={
+
+name:"zhang",				
+
+age:29,
+
+job:"Front-end Engineer",
+
+friends:["xu","li"]		
+
+};
+
+另一种定义的语法是：
+
+function Person() {
+
+Person.prototype.name="zhang";
+
+Person.prototype.age=29;
+
+Person.prototype.job="Front-end Engineer";
+
+Person.prototype.friends=["xu","li"];
+
+}
+
+但是这两种语法形式是有区别的，第一种的原型对象的constructor是指向Object对象的；而第二种的constructor是指向Person函数的。原因是，第一种在定义构造函数Person时，创建了一个默认prototype，这个prototype指向的是默认的原型对象；而下面的prototype对象的定义的时候，相当于是重新创建了一个原型对象，而这个原型对象的类型其实就是Object，其constructor指向的也是Object构造函数。从下图就可以很明白的看出这一点：
+
+
+
+
+
+而这一点在采用构造函数模式和原型模式组合方式时也有体现，原书中，是在prototype对象里显示的将constructor指向了Person函数，其实，不显示指向，Person.prototype.constructor的指向也是Person，因为这里没有完全重新建立prototype对象，只是在创建构造函数时创建的prototype对象基础上修改。
