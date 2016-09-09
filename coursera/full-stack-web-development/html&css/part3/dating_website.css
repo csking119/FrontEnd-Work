@@ -1,0 +1,81 @@
+/*General settings*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Roboto',tahoma, sans-serif;
+	width: 1000px;
+	margin:0 auto;
+}
+fieldset {
+	background-color: lightyellow;
+	border: 10px solid yellow;
+	width: 720px;
+	margin-bottom: 10px;
+}
+label {
+	width: 180px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: right;
+}
+
+label:hover {
+	font-size: 20px;
+}
+
+/*specific settings*/
+/*fieldset_1*/
+#img_preview {
+	display: none;
+}
+/*fieldset_2*/
+#field_2 div:nth-child(3) {
+	position: relative;
+	left: 130px;
+}
+#field_2 label[for="radio1"] {
+	width: auto;
+}
+#field_2 label[for="radio2"] {
+	width: auto;
+}
+
+/*field_3*/
+#field_3 span.less_value {
+	vertical-align: top;
+	background-color: red;
+	color: #fff;
+	width: 50px;
+	text-align: center;
+	display: inline-block;
+}
+#field_3 span.larger_value {
+	vertical-align: top;
+	background-color: purple;
+	color: #fff;
+	width: 50px;
+	text-align: center;
+	display: inline-block;
+}
+
+/*field_4*/
+
+#field_4 #address {
+	width: 360px;
+	height: 50px;
+}
+
+#field_4 span {
+	margin-left: 18px;
+}
+#field_4 label[for="checkbox1"] {
+	width: auto;
+}
+#field_4 label[for="checkbox2"] {
+	width: auto;
+}
+#field_4 label[for="checkbox3"] {
+	width: auto;
+}

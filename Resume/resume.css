@@ -1,0 +1,179 @@
+/*@font-face {
+  font-family: 'Lato';
+  src: url('fonts/lato/lato-black.eot');
+  src: url('fonts/lato/lato-black.eot?#iefix') format('embedded-opentype'), url('fonts/lato/lato-black.woff') format('woff'), url('fonts/lato/lato-black.ttf') format('truetype'), url('fonts/lato/lato-black.svg#latoblack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/lato/lato-bold.eot');
+  src: url('fonts/lato/lato-bold.eot?#iefix') format('embedded-opentype'), url('fonts/lato/lato-bold.woff') format('woff'), url('fonts/lato/lato-bold.ttf') format('truetype'), url('fonts/lato/lato-bold.svg#latobold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/lato/lato-bolditalic.eot');
+  src: url('fonts/lato/lato-bolditalic.eot?#iefix') format('embedded-opentype'), url('fonts/lato/lato-bolditalic.woff') format('woff'), url('fonts/lato/lato-bolditalic.ttf') format('truetype'), url('fonts/lato/lato-bolditalic.svg#latobold-italic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/lato/lato-italic.eot');
+  src: url('fonts/lato/lato-italic.eot?#iefix') format('embedded-opentype'), url('fonts/lato/lato-italic.woff') format('woff'), url('fonts/lato/lato-italic.ttf') format('truetype'), url('fonts/lato/lato-italic.svg#latoitalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/lato/lato-light.eot');
+  src: url('fonts/lato/lato-light.eot?#iefix') format('embedded-opentype'), url('fonts/lato/lato-light.woff') format('woff'), url('fonts/lato/lato-light.ttf') format('truetype'), url('fonts/lato/lato-light.svg#latolight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/lato/lato-regular.eot');
+  src: url('fonts/lato/lato-regular.eot?#iefix') format('embedded-opentype'), url('fonts/lato/lato-regular.woff') format('woff'), url('fonts/lato/lato-regular.ttf') format('truetype'), url('fonts/lato/lato-regular.svg#latoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Flat-UI-Icons';
+  src: url('fonts/glyphicons/flat-ui-icons-regular.eot');
+  src: url('fonts/glyphicons/flat-ui-icons-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons/flat-ui-icons-regular.woff') format('woff'), url('fonts/glyphicons/flat-ui-icons-regular.ttf') format('truetype'), url('fonts/glyphicons/flat-ui-icons-regular.svg#flat-ui-icons-regular') format('svg');
+}*/
+
+
+/*universal setting*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.72222;
+    background-color: #fffff5;
+
+}
+h2 {
+	color: #282c37;
+}
+
+/*header setting*/
+#wrapper {
+	width: 90%;
+	height: 1100px;
+	margin: 0 auto;
+	border:2px solid;
+	border-color: #333030;
+}
+
+#wrapper header {
+	background-color: #5e5e5f;
+	height: 150px;
+	position: relative;
+}
+
+#wrapper header p{
+	color: #fff;
+}
+#wrapper header hr {
+	position: absolute;
+	top: 35px;
+	width: 120px;
+	left: 150px;
+}
+#wrapper header hr+hr {
+	position: absolute;
+	top: 70px;
+
+}
+#wrapper header hr+p {
+	position: absolute;
+	top: 40px;
+	left: 150px;
+}
+#my_name span:nth-child(1) {
+	position: absolute;
+	width: 110px;
+	left: 8px;
+	
+}
+#my_name span:nth-child(2) {
+	font-size: 10px;
+	position: absolute;
+	top: 40px;
+	left: 5px;
+	width: 130px;
+
+}
+#wrapper header p~p {
+	color: #fff;
+	position: absolute;
+	left: 50%;
+}
+.fa.fa-quote-left {
+	position: absolute;
+	top: 40px;
+	
+}
+
+#wrapper header p~p span {
+	position: absolute;
+	left: 25px;
+	top: 40px;
+	width: 200px;
+}
+#wrapper header p~p span+span {
+	position: absolute;
+	top: 60px;	
+	left: 170px;
+	width: 260px;
+}
+.fa.fa-quote-right {
+	position: absolute;
+	top: 60px;
+	left: 430px;
+}
+
+/*about_me setting*/
+#about_me {
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+#about_me p {
+	position: absolute;
+	width: 400px;
+	left: 30px;
+}
+#about_me div {
+	position: absolute;
+	top: 150px;
+	font-size: 14px;
+	left: 30px;
+}
+#about_me div li {
+	list-style: none;
+}
+#about_me img {
+	position: absolute;
+	top: 0px;
+	left: 60%;
+	width: 300px;
+	height: 400px;
+	transform: rotate(90deg);
+}
+
+/*work_experience setting*/
+#work_experience {
+	position: relative;
+	top: 350px;
+	left: 10px;
+}

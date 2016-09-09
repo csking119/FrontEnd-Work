@@ -1,0 +1,16 @@
+div {
+	position: absolute;
+	width: 500px;
+	height:500px;
+}
+#container {
+	
+	margin: 0 auto;
+}
+img {
+	position: absolute;
+}
+#rightside {
+	left: 500px;
+	border-left: 1px solid black;
+}
