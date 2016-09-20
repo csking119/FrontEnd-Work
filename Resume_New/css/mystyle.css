@@ -53,14 +53,3 @@ body {
 .navbar-inverse .navbar-nav  .open .dropdown-menu> li > a:hover{
 	color: #000000;
 }
-
-#navbar .checkbox label {
-	color: #fff;
-}
-
-.tab-content {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
-}
