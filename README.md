@@ -11,4 +11,4 @@
 
 3. 第五、六、七章讲述了js与Html分离的好处，以及如何更全面的做到JavaScript的引入不会影响Html本身的结构
 
-4. 第八章主要介绍使用DOM方法以及javaScript脚本去对HTML文档内容进行动态的修改，比如采用getElementsByTagName方法去获取HTMl中的元素，然后对其进行遍历，将元素存入新建立的数组当中，从而可以再将获取的信息采用appendChild方法将其插入到HTML中指定的位置。
+4. 第八章主要介绍使用DOM方法以及javaScript脚本去对HTML文档内容进行动态的修改，比如采用getElementsByTagName方法去获取HTMl中的元素，然后对其进行遍历，将元素存入新建立的数组当中，从而可以再将获取的信息采用appendChild方法将其插入到HTML中指定的位置。123
